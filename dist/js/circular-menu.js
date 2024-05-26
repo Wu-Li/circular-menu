@@ -442,9 +442,9 @@
         if(!hasIcon(data.icon)) return;
 
         var span = document.createElement('mat-icon');
-        span.svgIcon = data.icon
+        span.setAttribute('svgIcon', data.icon);
         // var icon = getIcon(data.icon),
-            color = getIconColor(data.icon);
+        var color = getIconColor(data.icon);
 
         classed(span, icon + " cm-icon", true);
         style(span, 'color', color);
