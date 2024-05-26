@@ -441,9 +441,9 @@
     function createIcon (parent, data, index) {
         if(!hasIcon(data.icon)) return;
 
-        var span = document.createElement('span');
-
-        var icon = getIcon(data.icon),
+        var span = document.createElement('mat-icon');
+        span.svgIcon = data.icon
+        // var icon = getIcon(data.icon),
             color = getIconColor(data.icon);
 
         classed(span, icon + " cm-icon", true);
