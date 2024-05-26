@@ -443,6 +443,7 @@
 
         var span = document.createElement('mat-icon');
         span.setAttribute('svgIcon', data.icon);
+        classed(span, 'mat-icon', true);
         // var icon = getIcon(data.icon),
         var color = getIconColor(data.icon);
 
