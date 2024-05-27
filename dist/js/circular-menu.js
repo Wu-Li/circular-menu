@@ -445,11 +445,13 @@
         span.setAttribute('svgIcon', data.icon);
         classed(span, 'mat-icon', true);
         
-        var l = this._calc.clickZoneRadius * sizeRatio * .8 + "px";
-        // var m = this._calc.clickZoneRadius * marginTopRatio *.33 +  "px";
+        var l = this._calc.clickZoneRadius * sizeRatio - fontHeight + "px";
+        var m = this._calc.clickZoneRadius * marginTopRatio - fontHeight + "px";
+    
         style(span, 'width', l);
         style(span, 'height', l);
-        // style(span, 'margin-top', m);
+        style(span, 'font-size', l);
+        style(span, 'margin-top', m);
         
         parent.appendChild(span);
     }
