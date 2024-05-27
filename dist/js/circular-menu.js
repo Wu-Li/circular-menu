@@ -446,10 +446,10 @@
         classed(span, 'mat-icon', true);
         
         var l = this._calc.clickZoneRadius * sizeRatio * .8 + "px";
-        var m = this._calc.clickZoneRadius * marginTopRatio *.33 +  "px";
+        // var m = this._calc.clickZoneRadius * marginTopRatio *.33 +  "px";
         style(span, 'width', l);
         style(span, 'height', l);
-        style(span, 'margin-top', m);
+        // style(span, 'margin-top', m);
         
         parent.appendChild(span);
     }
