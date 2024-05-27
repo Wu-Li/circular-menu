@@ -445,8 +445,8 @@
         span.setAttribute('svgIcon', data.icon);
         classed(span, 'mat-icon', true);
         
-        var l = this._calc.clickZoneRadius * sizeRatio + "px";
-        var m = this._calc.clickZoneRadius * marginTopRatio +  "px";
+        var l = this._calc.clickZoneRadius * sizeRatio * .8 + "px";
+        var m = this._calc.clickZoneRadius * marginTopRatio *.66 +  "px";
         style(span, 'width', l);
         style(span, 'height', l);
         style(span, 'margin-top', m);
