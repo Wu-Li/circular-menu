@@ -444,12 +444,13 @@
         var span = document.createElement('mat-icon');
         span.setAttribute('svgIcon', data.icon);
         classed(span, 'mat-icon', true);
-        // var icon = getIcon(data.icon),
-        var color = getIconColor(data.icon);
-
-        // classed(span, icon + " cm-icon", true);
-        style(span, 'color', color);
-
+        
+        var l = this._calc.clickZoneRadius * sizeRatio + "px",
+        var m = this._calc.clickZoneRadius * marginTopRatio +  "px";
+        style(span, 'width', l);
+        style(span, 'height', l);
+        style(span, 'margin-top', m);
+        
         parent.appendChild(span);
     }
 
